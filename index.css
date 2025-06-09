@@ -260,7 +260,7 @@ body{
 
     .musicCover{
         width:400px;
-        height: 310px;
+        height: fit-content;
     }
 
     .currCoverImg {
@@ -344,4 +344,13 @@ body{
     .musicCover{
         width: 280px;
     }
+
+    .artist-name, .currCoverArtist{
+        font-weight: 100px;
+    }
+
+    .cover-name, .currCoverName{
+        font-weight: 400px;
+    }
+
 }
