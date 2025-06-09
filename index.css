@@ -14,6 +14,7 @@ body{
     height: 100%;
     width: 100%;
     overflow: hidden;
+    animation: entry .8s ease-in-out;
 }
 
 .logo{
@@ -353,4 +354,13 @@ body{
         font-weight: 400px;
     }
 
+}
+
+@keyframes entry{
+    from{
+        top:600px;
+    }
+    top{
+        top:0px;
+    }
 }
