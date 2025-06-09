@@ -14,7 +14,7 @@ body{
     height: 100%;
     width: 100%;
     overflow: hidden;
-    animation: entry .8s ease-in-out;
+    animation: entry2 1.2s ease-in-out;
 }
 
 .logo{
@@ -57,6 +57,7 @@ body{
     width: fit-content;
     background-color: rgb(224, 223, 223);
     margin: 0px;
+    animation: entry .8s ease-in-out;
 }
 
 .subTitle{
@@ -213,6 +214,7 @@ body{
     .container{
         position:relative;
         flex-direction: column-reverse;
+        animation: entry .8s ease-in-out;
     }
 
     .musicContainer{
@@ -362,5 +364,14 @@ body{
     }
     top{
         top:0px;
+    }
+}
+
+@keyframes entry2{
+    from{
+        opacity: 50%;
+    }
+    top{
+        opacity: 0%;
     }
 }
