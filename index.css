@@ -1,0 +1,347 @@
+body{
+    background-color: rgb(43, 42, 42);
+    margin: 0px;
+    background-image: url("https://videos.openai.com/vg-assets/assets%2Ftask_01jvdnfstdfsdvq1x4v75fwxf8%2F1747436788_img_3.webp?st=2025-06-09T05%3A01%3A33Z&se=2025-06-15T06%3A01%3A33Z&sks=b&skt=2025-06-09T05%3A01%3A33Z&ske=2025-06-15T06%3A01%3A33Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=x8Gcpp6pmqfefetruGpwHVlA3P64bCQZnihtzcWLRXI%3D&az=oaivgprodscus");
+    background-size: cover;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    left:0px;
+    top:0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo{
+    margin-top: 10px;
+    height:80px;
+    width:80px;
+}
+
+.musicPlayer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color:white;
+    margin-top: 0px;
+}
+
+.musicCover{
+    width:500px;
+    height: 410px;
+    border-radius: 10px;
+    background-color: rgb(224, 223, 223);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.musicContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: fit-content;
+    background-color: rgb(224, 223, 223);
+    margin: 0px;
+}
+
+.subTitle{
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.music-details{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+.music-details:hover{
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.music-text{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+}
+
+.cover-image{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.cover-name{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+.artist-name{
+    font-size: 12px;
+    margin-top: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.play-button{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+    background-color: rgba(235, 30, 30, 0.788);
+    border-radius: 30px;
+    border-width: 2px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.5 ease-in-out;
+}
+
+.currCoverImg{
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.currCoverName{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.currCoverArtist{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    margin-top: 0px;
+}
+
+.currMusic{
+    margin:10px;
+    width: 400px;
+}
+
+.buttonBox{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.playButton{
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 50%;
+}
+
+.next-prev{
+    height: 30px;
+    width: 30px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.playButton:hover, .next-prev:hover{
+    height: 32px;
+    width: 32px;
+    background-color: rgba(235, 30, 30, 0.788);
+    box-shadow: 0px 0px 10px 0px black;
+    border-radius: 50%;
+}
+
+.seekSlider{
+    display: flex;
+    flex-direction: row;
+}
+
+.timer{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width:300px;
+    height: 8px;
+    margin-top: 12px;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    border-color: white;
+    width: 30px;
+    height: 30px;
+    background-image: url("https://cdn-icons-png.flaticon.com/128/16168/16168004.png");
+    background-size: cover;
+    cursor: pointer;
+}
+
+@media(max-width:936px){
+    .container{
+        position:relative;
+        flex-direction: column-reverse;
+    }
+
+    .musicContainer{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap:wrap;
+        margin-top: 20px;
+        justify-content: center;
+        background-color: transparent;
+        
+    }
+
+    .music-details{
+        flex-direction: column;
+        text-align: center;
+        width:250px;
+        height: 250px;
+        justify-content: center;
+        margin: 30px;
+        background-color: rgb(224, 223, 223);
+        border-radius: 20px;
+    }
+
+    .cover-image{
+        height: 100px;
+        width:100px;
+    }
+
+    .play-button{
+        display: none;
+    }
+
+    .subTitle{
+        text-align: center;
+        color: white;
+        font-size: 38px;
+        width: 100%;
+    }
+}
+
+@media(max-width:620px){
+    .music-details{
+        width:200px;
+        height: 220px;
+    }
+
+    .musicCover{
+        width:400px;
+        height: 310px;
+    }
+
+    .currCoverImg {
+        height: 150px;
+        width: 150px;
+    }
+
+    .currCoverName{
+        font-size: 20px;
+    }
+
+    .title{
+        font-size: 32px;
+    }
+
+    .subTitle{
+        font-size: 28px;
+    }
+
+}
+
+@media(max-width:519px){
+    .musicContainer{
+        width: 100%;
+        flex-direction: column;
+        background-color: rgb(224, 223, 223);
+    }
+
+    .music-details{
+        flex-direction: row;
+        text-align: left;
+        justify-content: left;
+        width:100%;
+        height: fit-content;
+        border-radius: 0px;
+        margin: 0px;
+    }
+
+    .cover-image{
+        width:70px;
+        height: 70px;
+    }
+
+    .subTitle{
+        color: black;
+    }
+
+    .play-button{
+        display: block;
+    }
+}
+
+@media(max-width:441px){
+    .title{
+        font-size: 34px;
+    }
+    .subTitle{
+        font-size: 24px;
+    }
+    .musicCover{
+        width: 300px;
+    }
+    .currCoverName{
+        font-size: 18px;
+    }
+    .currCoverArtist{
+        font-size: 16px;
+    }
+    .slider{
+        width:180px;
+    }
+    .cover-name{
+        font-size: 16px;
+    }
+    .artist-name{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:333px){
+    .musicCover{
+        width: 280px;
+    }
+}

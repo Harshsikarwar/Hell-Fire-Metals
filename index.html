@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="index.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="musicContainer" id="musicContainer">
+                <h1 class="subTitle">Metals</h1>
+            </div>
+            <div class="musicPlayer">
+                <img class="logo" src="./image/burn.png">
+                <h1 class="title">Hell Fire Metal</h1>
+                <div class="musicCover">
+                    <img class="currCoverImg" id="coverImg">
+                    <h2 class="currCoverName" id="coverName"></h2>
+                    <h3 class="currCoverArtist" id="artist"></h3>
+                    <audio controls hidden id="music">
+                        <source type="audio/mpeg" src="./music/Master of Puppets (Remastered).mp3">
+                    </audio>
+                    <div class="seekSlider">
+                        <p class="timer" id="currTime">00:00</p>
+                        <input class="slider" id="slider" type="range" value="0">
+                        <p class="timer" id="maxTime">04:19</p>
+                    </div>
+                    <div class="buttonBox">
+                        <img class="next-prev" id="prevButton" src="./image/prev.png">
+                        <img class="playButton" id="playButton" src="https://cdn-icons-png.flaticon.com/128/1055/1055007.png">
+                        <img class="next-prev" id="nextButton" src="./image/next.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="index.js"></script>
+        <script type="module" src="musicData.js"></script>
+    </body>
+</html>
